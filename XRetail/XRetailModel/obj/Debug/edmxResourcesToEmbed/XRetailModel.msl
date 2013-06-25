@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="XRetailDBModelStoreContainer" CdmEntityContainer="XRetailDBEntities">
+    <EntitySetMapping Name="Areas">
+      <EntityTypeMapping TypeName="XRetailDBModel.Area">
+        <MappingFragment StoreEntitySet="Areas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="XRetailDBModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="XRetailDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="XRetailDBModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Property" ColumnName="Property" />
+          <ScalarProperty Name="unitPrice" ColumnName="unitPrice" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="discount" ColumnName="discount" />
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="XRetailDBModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="requiredDate" ColumnName="requiredDate" />
+          <ScalarProperty Name="shippedDate" ColumnName="shippedDate" />
+          <ScalarProperty Name="Employees_Id" ColumnName="Employees_Id" />
+          <ScalarProperty Name="Shops_Id" ColumnName="Shops_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="XRetailDBModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="quantityPerUnit" ColumnName="quantityPerUnit" />
+          <ScalarProperty Name="unitPrice" ColumnName="unitPrice" />
+          <ScalarProperty Name="unitsInStock" ColumnName="unitsInStock" />
+          <ScalarProperty Name="unitsOnOrder" ColumnName="unitsOnOrder" />
+          <ScalarProperty Name="discontinued" ColumnName="discontinued" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shops">
+      <EntityTypeMapping TypeName="XRetailDBModel.Shop">
+        <MappingFragment StoreEntitySet="Shops">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="productivityIndex" ColumnName="productivityIndex" />
+          <ScalarProperty Name="lastShippingDate" ColumnName="lastShippingDate" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visits">
+      <EntityTypeMapping TypeName="XRetailDBModel.Visit">
+        <MappingFragment StoreEntitySet="Visits">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="views" ColumnName="views" />
+          <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="XRetailModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="XRetailModelStoreContainer">
+    <EntitySet Name="Areas" EntityType="XRetailModel.Store.Areas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Categories" EntityType="XRetailModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employees" EntityType="XRetailModel.Store.Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderDetails" EntityType="XRetailModel.Store.OrderDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orders" EntityType="XRetailModel.Store.Orders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Products" EntityType="XRetailModel.Store.Products" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Shops" EntityType="XRetailModel.Store.Shops" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Visits" EntityType="XRetailModel.Store.Visits" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AreasShops" Association="XRetailModel.Store.FK_AreasShops">
+      <End Role="Areas" EntitySet="Areas" />
+      <End Role="Shops" EntitySet="Shops" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoriesProducts" Association="XRetailModel.Store.FK_CategoriesProducts">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeesVisits" Association="XRetailModel.Store.FK_EmployeesVisits">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Visits" EntitySet="Visits" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrdersEmployees" Association="XRetailModel.Store.FK_OrdersEmployees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrdersOrderDetails" Association="XRetailModel.Store.FK_OrdersOrderDetails">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrdersShops" Association="XRetailModel.Store.FK_OrdersShops">
+      <End Role="Shops" EntitySet="Shops" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductsOrderDetails" Association="XRetailModel.Store.FK_ProductsOrderDetails">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Areas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Property" Type="nvarchar" Nullable="false" />
+    <Property Name="unitPrice" Type="nvarchar" Nullable="false" />
+    <Property Name="quantity" Type="nvarchar" Nullable="false" />
+    <Property Name="discount" Type="nvarchar" Nullable="false" />
+    <Property Name="Order_Id" Type="int" Nullable="false" />
+    <Property Name="Product_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="orderDate" Type="datetime" Nullable="false" />
+    <Property Name="requiredDate" Type="datetime" Nullable="false" />
+    <Property Name="shippedDate" Type="datetime" />
+    <Property Name="Employees_Id" Type="int" Nullable="false" />
+    <Property Name="Shops_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" />
+    <Property Name="quantityPerUnit" Type="int" Nullable="false" />
+    <Property Name="unitPrice" Type="int" Nullable="false" />
+    <Property Name="unitsInStock" Type="int" Nullable="false" />
+    <Property Name="unitsOnOrder" Type="int" Nullable="false" />
+    <Property Name="discontinued" Type="bit" Nullable="false" />
+    <Property Name="Category_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Shops">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="owner" Type="nvarchar" Nullable="false" />
+    <Property Name="address" Type="nvarchar" Nullable="false" />
+    <Property Name="phone" Type="nvarchar" Nullable="false" />
+    <Property Name="productivityIndex" Type="int" />
+    <Property Name="lastShippingDate" Type="datetime" Nullable="false" />
+    <Property Name="name" Type="nvarchar" Nullable="false" />
+    <Property Name="Area_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Visits">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="views" Type="nvarchar" Nullable="false" />
+    <Property Name="Employee_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AreasShops">
+    <End Role="Areas" Type="XRetailModel.Store.Areas" Multiplicity="1" />
+    <End Role="Shops" Type="XRetailModel.Store.Shops" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Areas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Shops">
+        <PropertyRef Name="Area_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoriesProducts">
+    <End Role="Categories" Type="XRetailModel.Store.Categories" Multiplicity="1" />
+    <End Role="Products" Type="XRetailModel.Store.Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="Category_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeesVisits">
+    <End Role="Employees" Type="XRetailModel.Store.Employees" Multiplicity="1" />
+    <End Role="Visits" Type="XRetailModel.Store.Visits" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Visits">
+        <PropertyRef Name="Employee_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrdersEmployees">
+    <End Role="Employees" Type="XRetailModel.Store.Employees" Multiplicity="1" />
+    <End Role="Orders" Type="XRetailModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Employees_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrdersOrderDetails">
+    <End Role="Orders" Type="XRetailModel.Store.Orders" Multiplicity="1" />
+    <End Role="OrderDetails" Type="XRetailModel.Store.OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="Order_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrdersShops">
+    <End Role="Shops" Type="XRetailModel.Store.Shops" Multiplicity="1" />
+    <End Role="Orders" Type="XRetailModel.Store.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shops">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Shops_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductsOrderDetails">
+    <End Role="Products" Type="XRetailModel.Store.Products" Multiplicity="1" />
+    <End Role="OrderDetails" Type="XRetailModel.Store.OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="Product_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

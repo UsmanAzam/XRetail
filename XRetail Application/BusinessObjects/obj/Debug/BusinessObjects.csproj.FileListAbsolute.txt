@@ -1,0 +1,6 @@
+D:\VS Projects [Saved]\XRetail Application\BusinessObjects\bin\Debug\BusinessObjects.dll.config
+D:\VS Projects [Saved]\XRetail Application\BusinessObjects\bin\Debug\BusinessObjects.dll
+D:\VS Projects [Saved]\XRetail Application\BusinessObjects\bin\Debug\BusinessObjects.pdb
+D:\VS Projects [Saved]\XRetail Application\BusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+D:\VS Projects [Saved]\XRetail Application\BusinessObjects\obj\Debug\BusinessObjects.dll
+D:\VS Projects [Saved]\XRetail Application\BusinessObjects\obj\Debug\BusinessObjects.pdb

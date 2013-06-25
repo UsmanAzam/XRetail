@@ -1,0 +1,16 @@
+D:\VS Projects [Saved]\XRetail\XRetailModel\bin\Debug\XRetailModel.dll.config
+D:\VS Projects [Saved]\XRetail\XRetailModel\bin\Debug\XRetailModel.dll
+D:\VS Projects [Saved]\XRetail\XRetailModel\bin\Debug\XRetailModel.pdb
+D:\VS Projects [Saved]\XRetail\XRetailModel\obj\Debug\ResolveAssemblyReference.cache
+D:\VS Projects [Saved]\XRetail\XRetailModel\obj\Debug\XRetailModel.dll
+D:\VS Projects [Saved]\XRetail\XRetailModel\obj\Debug\XRetailModel.pdb
+D:\VS Projects [Saved]\XRetail\XRetailModel\bin\Debug\XRetailDB.mdf
+D:\VS Projects [Saved]\XRetail\XRetailModel\bin\Debug\XRetailDB_log.ldf
+D:\VS Projects [OLD]\XRetail\XRetailModel\bin\Debug\XRetailDB.mdf
+D:\VS Projects [OLD]\XRetail\XRetailModel\bin\Debug\XRetailDB_log.ldf
+D:\VS Projects [OLD]\XRetail\XRetailModel\bin\Debug\XRetailModel.dll.config
+D:\VS Projects [OLD]\XRetail\XRetailModel\bin\Debug\XRetailModel.dll
+D:\VS Projects [OLD]\XRetail\XRetailModel\bin\Debug\XRetailModel.pdb
+D:\VS Projects [OLD]\XRetail\XRetailModel\obj\Debug\ResolveAssemblyReference.cache
+D:\VS Projects [OLD]\XRetail\XRetailModel\obj\Debug\XRetailModel.dll
+D:\VS Projects [OLD]\XRetail\XRetailModel\obj\Debug\XRetailModel.pdb

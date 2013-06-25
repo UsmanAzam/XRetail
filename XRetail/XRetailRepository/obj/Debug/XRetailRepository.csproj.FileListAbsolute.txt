@@ -1,0 +1,7 @@
+D:\VS Projects [Saved]\XRetail\XRetailRepository\bin\Debug\XretailDB.sdf
+D:\VS Projects [Saved]\XRetail\XRetailRepository\bin\Debug\XRetailRepository.dll.config
+D:\VS Projects [Saved]\XRetail\XRetailRepository\bin\Debug\XRetailRepository.dll
+D:\VS Projects [Saved]\XRetail\XRetailRepository\bin\Debug\XRetailRepository.pdb
+D:\VS Projects [Saved]\XRetail\XRetailRepository\obj\Debug\ResolveAssemblyReference.cache
+D:\VS Projects [Saved]\XRetail\XRetailRepository\obj\Debug\XRetailRepository.dll
+D:\VS Projects [Saved]\XRetail\XRetailRepository\obj\Debug\XRetailRepository.pdb

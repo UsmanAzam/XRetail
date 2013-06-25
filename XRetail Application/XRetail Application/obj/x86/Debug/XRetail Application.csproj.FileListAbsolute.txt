@@ -1,0 +1,12 @@
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\bin\Debug\XRetail Application.exe.config
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\bin\Debug\XRetail Application.exe
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\bin\Debug\XRetail Application.pdb
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\bin\Debug\BusinessObjects.dll
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\bin\Debug\BusinessObjects.pdb
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\obj\x86\Debug\XRetail_Application.Form1.resources
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\obj\x86\Debug\XRetail_Application.Properties.Resources.resources
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\obj\x86\Debug\XRetail Application.exe
+D:\VS Projects [Saved]\XRetail Application\XRetail Application\obj\x86\Debug\XRetail Application.pdb
